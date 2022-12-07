@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zoo</title>
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <!-- UUID library 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/uuid/8.2.0/uuid.min.js"></script>
+    -->
+</head>
+
+<body>
+    <div class="container p-3">
+        <div class="row mb-3">
+            <h1 class="text-center">Zoo</h1>
+        </div>
+        
+        <div class="row">
+            <div class="col-md-4 mt-2">
+                <form id="add_form" class="bg-light">
+                    <h3 class="mb-3">Create Animal</h3>
+                    <div class="mb-3">
+                        <label for="exampleInputEmail1" class="form-label">Title</label>
+                        <input type="text" class="form-control" id="title_input" />
+                    </div>
+                    <div class="mb-3">
+                        <label for="exampleInputPassword1" class="form-label">Priсe</label>
+                        <input type="text" class="form-control" id="description_input" />
+                    </div>
+                    <button id="submit_button" type="submit" class="btn btn-primary">
+                        Submit
+                    </button>
+                </form>
+
+                <div class="mt-5">
+                    <h4 class="mb-3">Search</h4>
+                    <input id="find_input" type="text" class="form-control" />
+                    <button id="find_button" type="button" class="btn btn-primary mt-4">
+                        Find
+                    </button>
+                    <button id="cancel_find_button" type="button" class="btn btn-danger mt-4">
+                        Cancel
+                    </button>
+                </div>
+
+                <div class="mt-5">
+                    <h4 class="mb-3">Sort by Alphabet</h4>
+                    <button id="find_button_sort" type="button" class="btn btn-primary mt-4">
+                        Sort
+                    </button>
+                    <button id="cancel_find_button_sort" type="button" class="btn btn-danger mt-4">
+                        Cancel
+                    </button>
+                </div>
+
+                <div class="mt-5">
+                    <h4 class="mb-3">Total Price</h4>
+                    <button id="find_price" type="button" class="btn btn-primary mt-4">
+                        Show
+                    </button>
+                    <div id="h2"></div>
+
+                </div>
+
+            </div>
+
+            <ul id="items_container" class="col-md-4 mt-5 mt-md-2 mx-auto">
+            </ul>
+
+        </div>
+
+        <!-- JavaScript Bundle with Popper -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+            crossorigin="anonymous"></script>
+        <script type="module" src="/js/main.js"></script>
+        <script type="module" src="/js/api.js"></script>
+</body>
+
+</html>
